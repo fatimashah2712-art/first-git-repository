@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCart | Products</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">NovaCart</a>
+      <ul class="flex gap-5 font-medium text-sm md:text-base">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="text-indigo-600" href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart (<span data-cart-count>0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold">Shop Products</h1>
+    <div class="mt-6 grid sm:grid-cols-2 gap-4">
+      <input id="product-search" type="text" placeholder="Search products..." class="w-full border rounded-lg px-4 py-2" />
+      <select id="category-filter" class="w-full border rounded-lg px-4 py-2">
+        <option value="all">All Categories</option>
+        <option value="fashion">Fashion</option>
+        <option value="footwear">Footwear</option>
+        <option value="electronics">Electronics</option>
+        <option value="accessories">Accessories</option>
+        <option value="home">Home</option>
+        <option value="lifestyle">Lifestyle</option>
+      </select>
+    </div>
+
+    <div id="all-products" class="mt-8 grid sm:grid-cols-2 lg:grid-cols-4 gap-6"></div>
+  </main>
+</body>
+</html>

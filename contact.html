@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCart | Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">NovaCart</a>
+      <ul class="flex gap-5 font-medium text-sm md:text-base">
+        <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a class="text-indigo-600" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-12">
+    <h1 class="text-3xl font-bold">Contact Us</h1>
+    <form id="contact-form" class="mt-8 bg-white p-6 rounded-xl shadow-sm space-y-4">
+      <div><label class="text-sm font-medium">Name</label><input required type="text" class="w-full border rounded-lg px-3 py-2 mt-1" /></div>
+      <div><label class="text-sm font-medium">Email</label><input required type="email" class="w-full border rounded-lg px-3 py-2 mt-1" /></div>
+      <div><label class="text-sm font-medium">Message</label><textarea required rows="5" class="w-full border rounded-lg px-3 py-2 mt-1"></textarea></div>
+      <button class="bg-indigo-600 hover:bg-indigo-700 text-white px-5 py-2 rounded-lg">Send Message</button>
+    </form>
+  </main>
+</body>
+</html>

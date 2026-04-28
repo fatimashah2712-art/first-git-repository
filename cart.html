@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaCart | Cart</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="./assets/js/main.js"></script>
+</head>
+<body class="bg-slate-50 text-slate-900">
+  <header class="bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-indigo-600">NovaCart</a>
+      <ul class="flex gap-5 font-medium text-sm md:text-base">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a class="text-indigo-600" href="cart.html">Cart (<span data-cart-count>0</span>)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    <h1 class="text-3xl font-bold">Shopping Cart</h1>
+    <div class="bg-white rounded-xl shadow-sm mt-6 p-4 overflow-x-auto">
+      <table class="w-full text-left">
+        <thead>
+          <tr class="text-slate-500">
+            <th class="pb-3">Product</th><th class="pb-3">Price</th><th class="pb-3">Qty</th><th class="pb-3">Subtotal</th><th class="pb-3">Action</th>
+          </tr>
+        </thead>
+        <tbody id="cart-items"></tbody>
+      </table>
+      <div class="text-right mt-6 text-xl font-bold">Total: <span id="cart-total">$0</span></div>
+    </div>
+  </main>
+</body>
+</html>
